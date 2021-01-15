@@ -1,0 +1,37 @@
+<nav class="nav">
+  <div class="container">
+    <div class="logo">
+        <a href="#">Agata Klus</a>
+    </div>
+    <div class="main_list" id="mainListDiv">
+        <ul>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="media_button">
+        <button class="main_media_button" id="mediaButton">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+  </div>
+</nav>
+
+<section class="home"></section>
+
+<script>
+  var mainListDiv = document.getElementById("mainListDiv"),
+  mediaButton = document.getElementById("mediaButton");
+
+  mediaButton.onclick = function () {
+    "use strict";
+
+  mainListDiv.classList.toggle("show_list");
+  mediaButton.classList.toggle("active");
+};
+
+</script>
